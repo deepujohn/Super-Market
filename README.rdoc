@@ -43,3 +43,10 @@ rails g bootstrap:layout application fluid
 rails generate simple_form:install --bootstrap
 
 ````
+5. Create City Model
+
+````
+
+ rails g model City name
+
+````
