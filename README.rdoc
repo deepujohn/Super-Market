@@ -80,4 +80,27 @@ end
  rails g controller Customers
 
 ````
+10. Configure routes by adding to config/routes.rb
+
+````
+resources :customers 
+root 'customers#index'
+
+````
+11. Define action and view as follows
+
+- index action & view
+- new action & view
+- create action
+- show action & view
+- edit action & view
+- update action
+- destroy action
+
+Just use _form.html.erb for form and include it to our new.html.erb and edit.html.erb
+
+12. Add validations via model
+
+13.
+
 
