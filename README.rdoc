@@ -50,3 +50,34 @@ rails generate simple_form:install --bootstrap
  rails g model City name
 
 ````
+6. Create Customer Model
+
+````
+
+ rails g model Customer name email city:references country phone_number:integer
+
+````
+
+7. Migrate to create tables
+
+````
+ rake db:migrate
+
+````
+
+8. Added has_many association to app/model/city.rb
+
+````
+class City < ActiveRecord::Base
+	has_many :customers 
+end
+
+````
+
+9. Create Controller for Customer
+
+````
+ rails g controller Customers
+
+````
+
