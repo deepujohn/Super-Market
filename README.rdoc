@@ -101,6 +101,11 @@ Just use _form.html.erb for form and include it to our new.html.erb and edit.htm
 
 12. Add validations via model
 
-13.
+13. Add Bootstrap theme to controller
+
+````
+rails g bootstrap:themed Customers
+
+````
 
 
