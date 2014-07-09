@@ -1,28 +1,35 @@
-== README
+===============================================
+                 Super-Market
+===============================================
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. Created Rails Project.
 
-Things you may want to cover:
+````
+rails new Super-Market
 
-* Ruby version
+````
 
-* System dependencies
+2. Added dependency gem [To Gemfile]
 
-* Configuration
+````
+gem 'quiet_assets', group: :development
+gem 'simple_form'
+gem 'country_select'
 
-* Database creation
+gem "therubyracer"
+gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 
-* Database initialization
+````
 
-* How to run the test suite
+3. Install Bootstrap 
+[Fluid used for responsive layout]
 
-* Services (job queues, cache servers, search engines, etc.)
+````
 
-* Deployment instructions
+rails generate bootstrap:install static
 
-* ...
+rails g bootstrap:layout application fluid
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+````
