@@ -33,3 +33,13 @@ rails g bootstrap:layout application fluid
 
 
 ````
+
+4. Install Simple_Form
+[As using bootstrap add 
+--bootstrap]
+
+````
+
+rails generate simple_form:install --bootstrap
+
+````
